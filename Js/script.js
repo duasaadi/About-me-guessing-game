@@ -1,20 +1,25 @@
 'use strict';
 
 alert("Hello Dear client")
+// console.log(Hello Dear client);
 
-var userName = prompt("let's know what is your name, please?");
+
+var userName = prompt("Let's know what is your name, please?");
+var counter = 0;
 
 function printName(userName) {
 
     alert("Hello " + userName);
+    // console.log("Hello " + userName);
 }
 
 printName(userName);
 
 alert('welcome to my quiz :)');
+// console.log('welcome to my quiz :)');
 
 var favPlane = prompt("Guess what is my favorite type of fighter planes?");
-var counter = 0;
+
 // console.log(favPlane.toLowerCase());
 // console.log(favPlane.toUpperCase());
 // console.log(favPlane.toLowerCase() === ('mig-29' || 'mig '))
@@ -22,24 +27,28 @@ var counter = 0;
 if (favPlane.toLowerCase() === 'mig29' || favPlane.toLowerCase() === 'mig') {
 
     alert('you are right, I still like its high aerodynamic specifications:)');
+    // console.log('you are right, I still like its high aerodynamic specifications:));
     counter++;
 
 } else {
 
     alert('unfortunatlly, you did not guess :(');
+    // console.log('you are right, I still like its high aerodynamic specifications:));
 };
 
 
 
 var feeling = prompt('do you think that I am afraid of flying ?(yes/ No)');
 console.log(feeling);
-if (feeling.toLowerCase() === 'yse') {
+if (feeling.toLowerCase() === 'yes') {
 
-    alert(' yes, Great! :)');
+    alert(' No, I like it :)');
+    // console.log(' No, I like it :)');
     counter++;
 
 } else {
-    alert('No , I like it!');
+    alert('Great!');
+    // console.log(' No, I like it :)');
 }
 
 
@@ -47,11 +56,13 @@ if (feeling.toLowerCase() === 'yse') {
 var gravity = prompt('Do you think that i like the feeling of lacking gravity in Rollercoaster? ');
 
 console.log(gravity);
-if (gravity.toLowerCase() === 'yse') {
+if (gravity.toLowerCase() === 'yes') {
     alert(' yes, Great! :)');
+    // console.log(' yes, Great! :)');
     counter++;
 } else {
     alert('No , I like it!');
+    // console.log('No , I like it!');
 }
 
 
@@ -60,27 +71,27 @@ var flyPeriod = prompt("Guess How long could you fly with Mig-29 by paying 15000
 console.log(flyPeriod);
 if (flyPeriod === '1 hour') {
     alert(' yes, Great! :)');
+    // console.log(' yes, Great! :)');
     counter++;
 } else {
     alert('No ');
+    // console.log('No');
 
 
 }
 
 
-var BA = prompt('Do you think that i studied Aeronautics? ') ;
+var BA = prompt('Do you think that i studied Aeronautics? ');
 
-    console.log(BA);
-if(BA.toLowerCase()==='yse'){ 
-    alert(' yes, Great! :)');
-    counter++ ;
-}else {
+console.log(BA);
+if (BA.toLowerCase() === 'yes') {
+    alert(' Yes, great! :)');
+    // console.log('Yes, great!');
+    counter++;
+} else {
     alert('No');
+    // console.log('No');
 }
-
-
-
-
 
 // // sixth question
 
@@ -93,12 +104,15 @@ while (i < 4 && num !== "7") {
 
     if (num > 7) {
         alert('it is higher than mine');
+        // console.log('it is higher than min');
     } else if (num = 7) {
         alert('it is true');
+        // console.log('it is true');
         counter++;
         break;
     } else {
         alert('it is lower than mine');
+        // console.log('it is lower than mine');
     }
 
 }
@@ -106,18 +120,32 @@ while (i < 4 && num !== "7") {
 
 //7th question
 
-var check = ['Okra', 'Fettuccine Alfredo', 'Stake', 'Pizza', 'Stuffed grape leaves'];
+var lunchArray = ['Okra', 'Fettuccine Alfredo', 'Stake', 'Pizza', 'Stuffed grape leaves'];
 
 
 var numOfTrying = 0;
 var check = false;
 do {
-    var Q7 = prompt('what kind of food that I prefer at lunch ?');
-    for (var i = 0; i < check; i++);
+    var Q7 = prompt('what kind of food that I prefer at lunch ?  ');
+    for (var i = 0; i < lunchArray; i++) {
 
-    numOfTrying++;
-    alert('ya, I like it very much^ ^')
-    counter++;
-    break;
+        numOfTrying++;
+        alert("Even if it's not my favourite meal, but I think I like it");
+        counter++;
+        break;
+    }
 
-} while (numOfTrying < 6 && check !== false)
+    if (check != false) {
+        alert("No you are wrong.");
+        // console.log('Yes great.');
+
+    } else {
+        // console.log('Even if it's not my favourite meal, but I think I like it');
+    }
+}
+
+while (numOfTrying < 6 && check !== false)
+alert ("You got " + counter + " out of 7!")
+// console.log('You got " + counter + " out of 7!');
+
+alert("The correct answers are " + lunchArray + "!");
