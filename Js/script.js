@@ -135,7 +135,7 @@ do {
         break;
     }
 
-    if (check == false) {
+    if (check != false) {
         alert("No you are wrong.");
         // console.log('Yes great.');
 
