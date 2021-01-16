@@ -19,24 +19,15 @@ alert('welcome to my quiz :)');
 // console.log('welcome to my quiz :)');
 
 var favPlane = prompt("Guess what is my favorite type of fighter planes?");
-<<<<<<< HEAD
-var counter = 0;
-=======
 
 // console.log(favPlane.toLowerCase());
 // console.log(favPlane.toUpperCase());
->>>>>>> 3617c95ea3b1067fae24d35d84fddd84d23800e0
 // console.log(favPlane.toLowerCase() === ('mig-29' || 'mig '))
 
 if (favPlane.toLowerCase() === 'mig29' || favPlane.toLowerCase() === 'mig') {
 
     alert('you are right, I still like its high aerodynamic specifications:)');
-<<<<<<< HEAD
-    // console.log(favPlane.toLowerCase());
-
-=======
     // console.log('you are right, I still like its high aerodynamic specifications:));
->>>>>>> 3617c95ea3b1067fae24d35d84fddd84d23800e0
     counter++;
 
 } else {
@@ -48,44 +39,27 @@ if (favPlane.toLowerCase() === 'mig29' || favPlane.toLowerCase() === 'mig') {
 
 
 var feeling = prompt('do you think that I am afraid of flying ?(yes/ No)');
-<<<<<<< HEAD
-if (feeling.toLowerCase() === 'yse') {
-
-    alert(' No , I like it:)');
-    console.log(feeling);
-
-=======
 console.log(feeling);
 if (feeling.toLowerCase() === 'yes') {
 
     alert(' No, I like it :)');
     // console.log(' No, I like it :)');
->>>>>>> 3617c95ea3b1067fae24d35d84fddd84d23800e0
-    counter++;
+    
 
 } else {
-    alert('Great!');
-<<<<<<< HEAD
-=======
+    alert('It is true ,Great!');
     // console.log(' No, I like it :)');
->>>>>>> 3617c95ea3b1067fae24d35d84fddd84d23800e0
+    counter++ ;
 }
 
 
 
 var gravity = prompt('Do you think that i like the feeling of lacking gravity in Rollercoaster? ');
 
-<<<<<<< HEAD
-if (gravity.toLowerCase() === 'yes') {
-    alert(' yes, Great! :)');
-    console.log(gravity);
-
-=======
 console.log(gravity);
 if (gravity.toLowerCase() === 'yes') {
     alert(' yes, Great! :)');
     // console.log(' yes, Great! :)');
->>>>>>> 3617c95ea3b1067fae24d35d84fddd84d23800e0
     counter++;
 } else {
     alert('No , I like it!');
@@ -93,18 +67,13 @@ if (gravity.toLowerCase() === 'yes') {
 }
 
 
-var flyPeriod = prompt("Guess How long could you fly with Mig-29 by paying 15000$ ? ");
+var flyPeriod = prompt("Guess How long could you fly with Mig-29 by paying 15000$ (1 hour, 2 hours or 3 hours) ? ");
 
 if (flyPeriod === '1 hour') {
     alert(' yes, Great! :)');
-<<<<<<< HEAD
-    console.log(flyPeriod);
-
-=======
     // console.log(' yes, Great! :)');
->>>>>>> 3617c95ea3b1067fae24d35d84fddd84d23800e0
     counter++;
-    break ;
+    
 } else {
     alert('No ');
     // console.log('No');
@@ -113,7 +82,7 @@ if (flyPeriod === '1 hour') {
 }
 
 
-var BA = prompt('Do you think that i studied Aeronautics? ');
+var BA = prompt('Do you think that I studied Aeronautics? ');
 
 console.log(BA);
 if (BA.toLowerCase() === 'yes') {
@@ -153,32 +122,34 @@ while (i < 4 && num !== "7") {
 
 //7th question
 
-var lunchArray = ['Okra', 'Fettuccine Alfredo', 'Stake', 'Pizza', 'Stuffed grape leaves'];
+var lunchArray = ['Okra', 'Fettuccine Alfredo', 'Stake', 'Pizza'];
 
 
 var numOfTrying = 0;
 var check = false;
 do {
-    var Q7 = prompt('what kind of food that I prefer at lunch ?  ');
-    for (var i = 0; i < lunchArray; i++) {
+    var Q7 = prompt('what kind of food that I prefer at lunch (okra , beans, burger , stake , pizza, Fettuccine Alfredo) ?  ');
+    for (var i = 0; i < lunchArray.length; i++) {
 
         numOfTrying++;
-        alert("Even if it's not my favourite meal, but I think I like it");
+        alert("yes , that is true!");
+        alert("The correct answers are " + lunchArray + "!");
+
         counter++;
         break;
     }
 
     if (check != false) {
-        alert("No you are wrong.");
-        // console.log('Yes great.');
+        alert("No , but even if it's not one of my favourite meal array, I think I like it.");
+        console.log('Yes great.');
 
-    } else {
-        // console.log('Even if it's not my favourite meal, but I think I like it');
-    }
-}
+     } 
+    // else {
+    //     // console.log('Even if it's not my favourite meal, but I think I like it');
 
-while (numOfTrying < 6 && check !== false)
-alert ("You got " + counter + " out of 7!")
-// console.log('You got " + counter + " out of 7!');
+    // }
+}while (numOfTrying < 6 && check !== false)
 
-alert("The correct answers are " + lunchArray + "!");
+
+alert("You've got " + counter + " out of 7!")
+// console.log('You got " + counter + " out of 7!')
